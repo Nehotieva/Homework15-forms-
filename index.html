@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form's Style</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="main flex container">
+        <section class="section">
+            <form class="form" autocomplete="off">
+                <h2 class="form__label_title">
+                    Create an Account
+                </h2>
+                <div class="flex">
+                    <div class="label__flex">
+                        <label for="name">First name</label>
+                        <input type="text" id="name" class="form__input">
+                    </div>
+                    <div class="label__flex">
+                        <label for="name">Last name</label>
+                        <input type="text" id="name" class="form__input">
+                    </div>
+                </div>
+                <label for="mail" class="form__label">E-mail</label>
+                <input type="email" id="mail" class="form__input" required>
+                <span class="form__clarification">We'll never share your email with anyone else.</span>
+                <div class="form__gender gender">
+                    <div class="gender__item">
+                        <label>
+                            <input type="radio" name="gender">
+                            <span></span>
+                            Women
+                        </label>
+                        <label>
+                            <input type="radio" name="gender">
+                            <span></span>
+                            Men
+                        </label>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="label__flex">
+                        <label for="name">Country</label>
+                        <select name="country" class="form__select">
+                            <option value="" selected disabled>Select</option>
+                            <option value="ukr">Ukraine</option>
+                            <option value="swe">Sweden</option>
+                            <option value="pol">Poland</option>
+                            <option value="frn">France</option>
+                        </select>
+                    </div>
+                    <div class="label__flex">
+                        <label for="name">City</label>
+                        <input type="text" id="name" class="form__input">
+                    </div>
+                </div>
+                <div class="btn">
+
+                    <a href="#" class="btn__button">Sign up</a>
+                    <div class="btn__span">
+                        <span class="form__clarification">
+                            By clicking the 'Sign Up' button, you confirm that you accept our <a href=""
+                                class="form__clarification_link">Terms of Use</a> and <a href=""
+                                class="form__clarification_link">Privacy Policy.</a>
+                        </span>
+                    </div>
+
+                    <div class="btn__underline">
+                        <div class="flex btn__login">
+                            <p>Have an account?</p>
+                            <a href="" class="form__clarification_link">Log In</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+
+
+        <section class="section">
+            <form class="form">
+                <h2 class="form__label_title">
+                    Profile
+                </h2>
+                <div class="flex">
+                    <img src="./assets/img/man.jpg" alt="man">
+                    <div>
+                        <input type="file" id="file" name="file">
+                        <span class="form__clarification">Up to 1 MB (300x300 px)</span>
+                    </div>
+                    <input type="reset" value="reset">
+                </div>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
